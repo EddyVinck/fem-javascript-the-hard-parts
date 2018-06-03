@@ -5,11 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-  <title>Document</title>
+  <title>JS Hard Parts</title>
 </head>
 <body>
   <div class="container">
-    <h1>JavaScript: The Hard Parts</h1>
+    <div class="text-wrapper">
+
+      <h1>JavaScript: The Hard Parts</h1>
+
+      <h2>Five capacities</h2>
+      <ol>
+        <li>Analytical problem solving with code</li>
+        <li>Technical communication — Can I implement your approach just from your explanation</li>
+        <li>Engineering best practices and approach (Debugging, code structure, patience and reference to documentation)</li>
+        <li>Non-technical communication (empathetic and thoughtful communication)</li>
+        <li>Language and computer science experience</li>
+      </ol>
+      <h2>Principles of JavaScript</h2>
+      <p>
+        There is a global execution context. It is created when we run our code.
+        <br><strong>Thread of execution:</strong> parsing and executing the code line after line<br>
+        Live memory of variables with data (global variable environment).
+      </p>
+      <p>When you run a function you create a new (local) execution context and a local memory (variable environment) where anything defined in the function is stored.</p>
+      <p>
+        <strong>Call Stack.</strong>
+        When a function is invoked it is pushed to the call stack. When the function returns or finds the closing curly brace (implicit return) the function is popped off the call stack.
+      </p>
+
+      <h2>Functional programming</h2>
+      <p></p>
+
+
+    </div>
   </div>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
